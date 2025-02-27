@@ -8,7 +8,6 @@ class MyMailer < ApplicationMailer
   def send_email_with_attachment(email, attachment_path)
     @greeting = "Hi"
     attachments[File.basename(attachment_path)] = File.read(attachment_path)
-
-    mail(to: "arvindkushwah9@yopmail.com", subject: 'Email with Attachment')
+    mail(to: "rinkukushwah679@gmail.com", subject: 'Email with Attachment')
   end
 end

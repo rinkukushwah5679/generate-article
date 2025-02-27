@@ -36,7 +36,7 @@
 <%#= area_chart Article.group_by_day(:created_at).count %>
 
 <%= link_to "New article", new_article_path %>
-<%#= link_to 'Create PDF' , generate_pdf_path(format: :pdf),class:"btn btn-primary"%>
+<%= link_to 'Create PDF' , generate_pdf_path(format: :pdf),class:"btn btn-primary"%>
 
 
 <%= form_tag "/send_email_with_attachment", class: "inline-form", multipart: true do %>
